@@ -5,8 +5,8 @@ const transporter = nodemailer.createTransport({
     port: 465, // 端口
     secureConnection: false, // use SSL
     auth: {
-        "user": 'Indomite@qq.com', // 邮箱账号
-        "pass": 'ojlihlvgrltqbabg' // 邮箱的授权码
+        "user": 'yourname@qq.com', // 邮箱账号
+        "pass": '****************' // 邮箱的授权码
     }
 });
 const send = (mailOptions) => {
@@ -26,8 +26,8 @@ let email = {
     htmlBody: '<h1>Hello!</h1><p style="font-size: 18px;color:#000;">验证码为：<u style="font-size: 16px;color:#1890ff;">' + emailCode + '</u></p><p style="font-size: 14px;color:#666;">10分钟内有效</p>'
 }
 let mailOptions = {
-    from: 'Indomite@qq.com', // 发件人地址
-    to: '2420996960@qq.com', // 收件人地址，多个收件人可以使用逗号分隔
+    from: 'yourname@qq.com', // 发件人地址
+    to: 'accpectname@qq.com', // 收件人地址，多个收件人可以使用逗号分隔
     subject: email.title, // 邮件标题
     html: email.htmlBody // 邮件内容
 };
